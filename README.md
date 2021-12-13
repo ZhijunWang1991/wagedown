@@ -1,6 +1,12 @@
 
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
 
+# Wagedown
+
+Wagedown aims to provide the Rmarkdown template for PhD candidate in
+Wageningen University, the Netherlands. The Wagedown in now being built
+based on Thesisdown.
+
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
 
 This project was inspired by the
@@ -70,10 +76,8 @@ I’ll review it and merge it in. Let’s keep the list going!
 | Humboldt University of Berlin                               | [phister/huwiwidown](https://github.com/phister/huwiwidown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Kansas State University                                     | [emraher/wildcatdown](https://github.com/emraher/wildcatdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
 | Massachusetts Institute of Technology                       | [ratatstats/manusdown](https://github.com/ratatstats/manusdown)                               | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
-|Monash University                                            | [masiraji/monashthesisdown](https://github.com/masiraji/monashthesisdown)                     | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)     |
 | Oregon State University                                     | [zkamvar/beaverdown](https://github.com/zkamvar/beaverdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Oxford University                                           | [davidplans/oxdown](https://github.com/davidplans/oxdown)                                     | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
-| Queen's University                                          | [eugenesit/gaelsdown](https://github.com/eugenesit/gaelsdown)                                 | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Smith College                                               | [SmithCollege-SDS/pioneerdown](https://github.com/SmithCollege-SDS/pioneerdown)               | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Southampton University                                      | [dr-harper/sotonthesis](https://github.com/dr-harper/sotonthesis)                             | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Stanford University                                         | [mhtess/treedown](https://github.com/mhtess/treedown)                                         | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
@@ -96,7 +100,7 @@ I’ll review it and merge it in. Let’s keep the list going!
 | University of Bristol                                       | [mattlee821/bristolthesis](https://github.com/mattlee821/bristolthesis)                       | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universidade Federal de Santa Catarina                      | [lfpdroubi/ufscdown](https://github.com/lfpdroubi/ufscdown)                                   | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 | Universiteit van Amsterdam                                  | [lcreteig/amsterdown](https://github.com/lcreteig/amsterdown)                                 | [benmarwick/huskydown](https://github.com/benmarwick/huskydown) |
-
+| McMaster University                                         | [paezha/macdown](https://github.com/paezha/macdown)                                           | [ismayc/thesisdown](https://github.com/ismayc/thesisdown)       |
 
 ### Using thesisdown from Chester’s GitHub
 
@@ -161,11 +165,11 @@ the following dialog to show up.
 -   3a) **RECOMMENDED** Create a new RStudio project with a {thesisdown}
     template.
 
-    In RStudio, click on **File** &gt; **New Project** &gt; **New
-    Directory**. Then select **Thesis Project using thesisdown** from
-    the dropdown that will look something like the image below. You’ll
-    see the graduation cap as the icon on the left for the appropriate
-    project type.
+    In RStudio, click on **File** > **New Project** > **New Directory**.
+    Then select **Thesis Project using thesisdown** from the dropdown
+    that will look something like the image below. You’ll see the
+    graduation cap as the icon on the left for the appropriate project
+    type.
 
     ![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_proj.png)
 
