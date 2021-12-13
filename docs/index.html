@@ -4,14 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Using the bookdown package and LaTeX and Word thesis templates from
+    Reed College, this package aims to encourage reproducible research using
+    simple Markdown syntax while embedding all of the R code to produce plots
+    and analyses as well.">
 <title>An updated R Markdown thesis template using the bookdown package • thesisdown</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="An updated R Markdown thesis template using the bookdown package">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="An updated R Markdown thesis template using the bookdown package">
 <meta property="og:description" content="Using the bookdown package and LaTeX and Word thesis templates from
     Reed College, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
@@ -21,50 +24,49 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">thesisdown</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
-      </span>
-    </div>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="index.html">thesisdown</a>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="reference/index.html">Reference</a>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0.9000</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-2">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="news/index.html">Changelog</a>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav"></ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
-</div>
-<!--/.navbar -->
-
-      
-
-      </header><div class="row">
-  <div class="contents col-md-9">
-<div id="thesisdown-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#thesisdown-" class="anchor"></a>thesisdown <img src="reference/figures/thesisdown_hex.png" align="right" width="200">
+</nav><div class="container template-home">
+<div class="row">
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="wagedown-">Wagedown <img src="reference/figures/wagedown_hex.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#wagedown-"></a>
 </h1></div>
+<p>Wagedown aims to provide the Rmarkdown template for PhD candidate in Wageningen University, the Netherlands. The Wagedown in now being built based on thesisdown.</p>
+</div>
+<div class="section level1">
+<h1 id="thesisdown-">thesisdown <img src="reference/figures/thesisdown_hex.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#thesisdown-"></a>
+</h1>
 <p>This project was inspired by the <a href="https://github.com/rstudio/bookdown" class="external-link">bookdown</a> package and is an updated version of my Senior Thesis template in the <code>reedtemplates</code> package <a href="https://github.com/ismayc/reedtemplates" class="external-link">here</a>. It was originally designed to only work with the Reed College LaTeX template, but has since been adapted to work with many different institutions by many different individuals. Check out the <a href="https://github.com/ismayc/thesisdown#customizing-thesisdown-to-your-institution" class="external-link"><strong>Customizing thesisdown to your institution</strong></a> section below for examples.</p>
 <p>Currently, the PDF and gitbook versions are fully-functional. The word and epub versions are developmental, have no templates behind them, and are essentially calls to the appropriate functions in bookdown.</p>
 <p>If you are new to working with <code>bookdown</code>/<code>rmarkdown</code>, please read over the documentation available in the <code>gitbook</code> template at <a href="https://ismayc.github.io/thesisdown_book" class="external-link uri">https://ismayc.github.io/thesisdown_book</a>.</p>
@@ -77,9 +79,9 @@
 <li><a href="https://ismayc.github.io/thesisdown_book" class="external-link">gitbook</a></li>
 </ul>
 <p>Under the hood, the Reed College LaTeX template is used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight <a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="external-link">markdown</a> syntax, and <strong>R</strong> code and its output can be seamlessly included using <a href="https://rmarkdown.rstudio.com" class="external-link">rmarkdown</a>.</p>
-<div id="customizing-thesisdown-to-your-institution" class="section level2">
-<h2 class="hasAnchor">
-<a href="#customizing-thesisdown-to-your-institution" class="anchor"></a>Customizing thesisdown to your institution</h2>
+<div class="section level2">
+<h2 id="customizing-thesisdown-to-your-institution">Customizing thesisdown to your institution<a class="anchor" aria-label="anchor" href="#customizing-thesisdown-to-your-institution"></a>
+</h2>
 <p>In an ideal world, this package would support a variety of different LaTeX templates from a wide range of institutions and we’d love to get it there at some point. Until that time, realize that this was designed to only work with the Reed College LaTeX template but others have adapted it to work with their institutions. Here are some that have customized it to fit their needs. It is recommended you review how they changed the files by comparing their repositories to this one and then make tweaks to yours as needed. Feel free to file an issue on this repo if you have questions/troubles.</p>
 <p>Have you created a thesisdown template for your institution and would like to have it included here? Make a PR <a href="https://github.com/ismayc/thesisdown/commit/760113a076767cf67b6e22339e398bd3f15305c5" class="external-link">similar to the commit done to include <code>jayhawkdown</code></a>. I’ll review it and merge it in. Let’s keep the list going!</p>
 <table class="table">
@@ -264,11 +266,16 @@
 <td align="left"><a href="https://github.com/lcreteig/amsterdown" class="external-link">lcreteig/amsterdown</a></td>
 <td align="left"><a href="https://github.com/benmarwick/huskydown" class="external-link">benmarwick/huskydown</a></td>
 </tr>
+<tr class="odd">
+<td align="left">McMaster University</td>
+<td align="left"><a href="https://github.com/paezha/macdown" class="external-link">paezha/macdown</a></td>
+<td align="left"><a href="https://github.com/ismayc/thesisdown" class="external-link">ismayc/thesisdown</a></td>
+</tr>
 </tbody>
 </table>
-<div id="using-thesisdown-from-chesters-github" class="section level3">
-<h3 class="hasAnchor">
-<a href="#using-thesisdown-from-chesters-github" class="anchor"></a>Using thesisdown from Chester’s GitHub</h3>
+<div class="section level3">
+<h3 id="using-thesisdown-from-chesters-github">Using thesisdown from Chester’s GitHub<a class="anchor" aria-label="anchor" href="#using-thesisdown-from-chesters-github"></a>
+</h3>
 <p>Special thanks to <a href="https://github.com/benmarwick" class="external-link">Ben Marwick</a> for helping to add a lot more clarity to the directions below from the <a href="https://github.com/benmarwick/huskydown/blob/master/README.md" class="external-link">README of his spin-off <code>huskydown</code> package</a>.</p>
 <p>Using {thesisdown} has some prerequisites which are described below. To compile PDF documents using <strong>R</strong>, you are going to need to have LaTeX installed. By far the easiest way to install LaTeX on any platform is with the <a href="https://yihui.name/tinytex/" class="external-link">tinytex</a> R package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -283,7 +290,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Ensure that you have already installed LaTeX and the fonts described above, and are using the latest version of <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">RStudio</a>. You can use <code>thesisdown</code> without RStudio. For example, you can write the Rmd files in your favorite text editor (e.g. <a href="https://atom.io/" class="external-link">Atom</a>, <a href="https://notepad-plus-plus.org/" class="external-link">Notepad++</a>). But RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing. We’ll proceed assuming that you have decided to use the RStudio workflow.</p></li>
 <li>
-<p>Install the {bookdown} and {thesisdown} packages. Note that {thesisdown} is not available on CRAN at the moment and that’s why <code><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages("thesisdown")</a></code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github()</a></code> as shown below instead to install the package.</p>
+<p>Install the {bookdown} and {thesisdown} packages. Note that {thesisdown} is not available on CRAN at the moment and that’s why <code>install.packages("thesisdown")</code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github()</a></code> as shown below instead to install the package.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> 
   <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span>, repos <span class="op">=</span> <span class="st">"https://cran.rstudio.org"</span><span class="op">)</span>
@@ -314,100 +321,107 @@
 <li>After choosing which type of output you’d like in the YAML at the top of <code>index.Rmd</code>, <strong>Knit</strong> the <code>index.Rmd</code> file to get the book in PDF or HTML formats.</li>
 </ol>
 </div>
-<div id="day-to-day-writing-of-your-thesis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#day-to-day-writing-of-your-thesis" class="anchor"></a>Day-to-day writing of your thesis</h3>
+<div class="section level3">
+<h3 id="day-to-day-writing-of-your-thesis">Day-to-day writing of your thesis<a class="anchor" aria-label="anchor" href="#day-to-day-writing-of-your-thesis"></a>
+</h3>
 <p>You need to edit the individual chapter R Markdown files to write your thesis. It’s recommended that you version control your thesis using GitHub if possible. RStudio can also easily sync up with GitHub to make the process easier. While writing, you should <code>git commit</code> your work frequently, after every major activity on your thesis. For example, every few paragraphs or section of text, and after major step of analysis development. You should <code>git push</code> at the end of each work session before you leave your computer or change tasks. For a gentle, novice-friendly guide to getting starting with using Git with R and RStudio, see <a href="https://happygitwithr.com/" class="external-link uri">https://happygitwithr.com/</a>.</p>
 </div>
 </div>
-<div id="rendering" class="section level2">
-<h2 class="hasAnchor">
-<a href="#rendering" class="anchor"></a>Rendering</h2>
+<div class="section level2">
+<h2 id="rendering">Rendering<a class="anchor" aria-label="anchor" href="#rendering"></a>
+</h2>
 <p>To render your thesis into a PDF, open <code>index.Rmd</code> in RStudio and then click the “knit” button. To change the output formats between PDF, gitbook and Word, look at the <code>output:</code> field in <code>index.Rmd</code> and comment-out the formats you don’t want.</p>
 <p>The PDF file of your thesis will be deposited in the <code>_book/</code> directory, by default.</p>
 </div>
-<div id="components" class="section level2">
-<h2 class="hasAnchor">
-<a href="#components" class="anchor"></a>Components</h2>
+<div class="section level2">
+<h2 id="components">Components<a class="anchor" aria-label="anchor" href="#components"></a>
+</h2>
 <p>The following components are ones you should edit to customize your thesis:</p>
-<div id="_bookdownyml" class="section level3">
-<h3 class="hasAnchor">
-<a href="#_bookdownyml" class="anchor"></a><code>_bookdown.yml</code>
+<div class="section level3">
+<h3 id="_bookdownyml">
+<code>_bookdown.yml</code><a class="anchor" aria-label="anchor" href="#_bookdownyml"></a>
 </h3>
 <p>This is the main configuration file for your thesis. You can change the name of your outputted file here for your thesis and other options about your thesis here.</p>
 </div>
-<div id="indexrmd" class="section level3">
-<h3 class="hasAnchor">
-<a href="#indexrmd" class="anchor"></a><code>index.Rmd</code>
+<div class="section level3">
+<h3 id="indexrmd">
+<code>index.Rmd</code><a class="anchor" aria-label="anchor" href="#indexrmd"></a>
 </h3>
 <p>This file contains all the meta information that goes at the beginning of your document. You’ll need to edit the top portion of this file (the YAML) to put your name on the first page, the title of your thesis, etc. Note that you need to have at least one chapter start in the <code>index.Rmd</code> file for the build to work. For the template, this is done with <code># Introduction</code> in the example from the template.</p>
 </div>
-<div id="01-chap1rmd-02-chap2rmd-etc" class="section level3">
-<h3 class="hasAnchor">
-<a href="#01-chap1rmd-02-chap2rmd-etc" class="anchor"></a><code>01-chap1.Rmd</code>, <code>02-chap2.Rmd</code>, etc.</h3>
+<div class="section level3">
+<h3 id="01-chap1rmd-02-chap2rmd-etc">
+<code>01-chap1.Rmd</code>, <code>02-chap2.Rmd</code>, etc.<a class="anchor" aria-label="anchor" href="#01-chap1rmd-02-chap2rmd-etc"></a>
+</h3>
 <p>These are the Rmd files for each chapter in your dissertation. Write your thesis in these. If you’re writing in RStudio, you may find the <a href="https://github.com/benmarwick/wordcountaddin" class="external-link">wordcount addin</a> useful for getting word counts and readability statistics in R Markdown documents.</p>
 </div>
-<div id="bib" class="section level3">
-<h3 class="hasAnchor">
-<a href="#bib" class="anchor"></a><code>bib/</code>
+<div class="section level3">
+<h3 id="bib">
+<code>bib/</code><a class="anchor" aria-label="anchor" href="#bib"></a>
 </h3>
 <p>Store your bibliography (as bibtex files) here. We recommend using the <a href="https://github.com/crsh/citr" class="external-link">citr addin</a> and <a href="https://www.zotero.org/" class="external-link">Zotero</a> to efficiently manage and insert citations.</p>
 </div>
-<div id="csl" class="section level3">
-<h3 class="hasAnchor">
-<a href="#csl" class="anchor"></a><code>csl/</code>
+<div class="section level3">
+<h3 id="csl">
+<code>csl/</code><a class="anchor" aria-label="anchor" href="#csl"></a>
 </h3>
 <p>Specific style files for bibliographies should be stored here. A good source for citation styles is <a href="https://github.com/citation-style-language/styles#readme" class="external-link uri">https://github.com/citation-style-language/styles#readme</a>.</p>
 </div>
-<div id="figure-and-data" class="section level3">
-<h3 class="hasAnchor">
-<a href="#figure-and-data" class="anchor"></a><code>figure/</code> and <code>data/</code>
+<div class="section level3">
+<h3 id="figure-and-data">
+<code>figure/</code> and <code>data/</code>
+<a class="anchor" aria-label="anchor" href="#figure-and-data"></a>
 </h3>
 <p>Store your figures and data here and reference them in your R Markdown files. See the <a href="https://bookdown.org/yihui/bookdown/" class="external-link">bookdown book</a> for details on cross-referencing items using R Markdown.</p>
 </div>
 </div>
 </div>
-  </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="license">
+  </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing thesisdown</a></li>
+</ul>
+</div>
 
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Chester Ismay <br><small class="roles"> Maintainer, author </small>  </li>
 <li>Nick Solomon <br><small class="roles"> Author </small>  </li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
 
 
-  </div>
+  </aside>
 </div>
 
 
-      <footer><div class="copyright">
+    <footer><div class="pkgdown-footer-left">
   <p></p>
 <p>Developed by Chester Ismay, Nick Solomon.</p>
 </div>
 
-<div class="pkgdown">
+<div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9000.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
-
 
   
 

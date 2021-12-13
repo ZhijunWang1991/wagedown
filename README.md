@@ -1,11 +1,11 @@
 
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
 
-# Wagedown
+# Wagedown <img src="man/figures/wagedown_hex.png" align="right" width=200 />
 
 Wagedown aims to provide the Rmarkdown template for PhD candidate in
 Wageningen University, the Netherlands. The Wagedown in now being built
-based on Thesisdown.
+based on thesisdown.
 
 # thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
 
