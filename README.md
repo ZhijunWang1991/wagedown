@@ -7,8 +7,6 @@ Wagedown aims to provide the Rmarkdown template for PhD candidate in
 Wageningen University, the Netherlands. The Wagedown in now being built
 based on thesisdown.
 
-# thesisdown <img src="man/figures/thesisdown_hex.png" align="right" width=200 />
-
 This project was inspired by the
 [bookdown](https://github.com/rstudio/bookdown) package and is an
 updated version of my Senior Thesis template in the `reedtemplates`
