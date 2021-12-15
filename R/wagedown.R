@@ -1,4 +1,4 @@
-#' wagedown: A package for creating undergraduate, Masters, and PhD theses
+#' wagedown: A package for creating PhD thesis
 #' using R Markdown
 #'
 #'
@@ -12,4 +12,4 @@
 #' Creates an R Markdown thesis template as an ebook
 #' @docType package
 #' @name wagedown
-"_PACKAGE"
+NULL
