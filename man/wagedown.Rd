@@ -3,11 +3,10 @@
 \docType{package}
 \name{wagedown}
 \alias{wagedown}
-\alias{wagedown-package}
 \title{wagedown: A package for creating PhD thesis
 using R Markdown}
 \description{
-Using the bookdown package and LaTeX and Word thesis templates from Wageningen Univeristy, this package aims to encourage reproducible research using simple Markdown syntax while embedding all of the R code to produce plots and analyses as well. Based on Chester Ismay's thesisdown.A modification of the default LaTeX template ensures the PhD thesis conforms to the Wageningen University requirements.
+wagedown: A package for creating undergraduate, Masters, and PhD thesis using Rmarkdown
 }
 \section{thesis_gitbook}{
 
@@ -29,13 +28,3 @@ Creates an R Markdown thesis template as a Microsoft Word document
 Creates an R Markdown thesis template as an ebook
 }
 
-\author{
-\strong{Maintainer}: Chester Ismay \email{chester.ismay@gmail.com}
-
-Authors:
-\itemize{
-  \item Nick Solomon \email{nick@nicksolomon.me}
-  \item Wang Zhijun \email{zhijun0916@gmail.com}
-}
-
-}

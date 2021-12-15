@@ -6,6 +6,9 @@
 \usage{
 thesis_gitbook(...)
 }
+\arguments{
+\item{...}{Further arguments passed to or from other methods.}
+}
 \value{
 A gitbook webpage
 }

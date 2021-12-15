@@ -6,9 +6,12 @@
 \usage{
 thesis_word(...)
 }
+\arguments{
+\item{...}{Further arguments passed to or from other methods.}
+}
 \value{
 A Word Document based on (hopefully soon, but not currently)
-the Drexel PhD Thesis Word template
+the Reed Senior Thesis Word template
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file

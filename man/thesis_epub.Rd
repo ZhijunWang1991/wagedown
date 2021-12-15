@@ -6,6 +6,9 @@
 \usage{
 thesis_epub(...)
 }
+\arguments{
+\item{...}{Further arguments passed to or from other methods.}
+}
 \value{
 A ebook version of the thesis
 }
