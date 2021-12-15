@@ -1,0 +1,5 @@
+---
+knit: "bookdown::render_book"
+---
+
+# List of publications {-}

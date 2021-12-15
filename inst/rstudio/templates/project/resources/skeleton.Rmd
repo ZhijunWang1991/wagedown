@@ -1,14 +1,14 @@
 ---
-title: 'My Final College Paper'
+title: 'My Thesis WUR'
 author: 'Your R. Name'
 date: 'May 20xx'
-institution: 'Reed College'
-division: 'Mathematics and Natural Sciences'
+institution: 'Wageningen University'
+division: 'Food Science'
 advisor: 'Advisor F. Name'
 # If you have more two advisors, un-silence line 7
 #altadvisor: 'Your Other Advisor'
-department: 'Mathematics'
-degree: 'Bachelor of Arts'
+department: 'Food'
+degree: 'PhD of Arts'
 knit: bookdown::render_book
 site: bookdown::bookdown_site
 
@@ -25,7 +25,7 @@ params:
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  thesisdown::thesis_pdf: default 
+  wagedown::thesis_pdf: default 
 #  thesisdown::thesis_gitbook: default         
 #  thesisdown::thesis_word: default
 #  thesisdown::thesis_epub: default
@@ -34,14 +34,10 @@ output:
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
 # for the .RMD files. If you are NOT producing a PDF, delete or silence
 # lines 25-39 in this YAML header.
-abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
-acknowledgements: |
-  I want to thank a few people.
-dedication: |
-  You can have a dedication here if you wish. 
+ 
 preface: |
   This is an example of a thesis setup to use the reed thesis document class 
   (for LaTeX) and the R bookdown package, in general.
@@ -71,6 +67,13 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 # This chunk ensures that the thesisdown package is
 # installed and loaded. This thesisdown package includes
 # the template files for the thesis.
+if(!require(devtools))
+  install.packages("devtools", repos = "http://cran.rstudio.com")
+if(!require(wagedown))
+  devtools::install_github("ZhijunWang1991/wagedown")
+library(wagedown)
+
+
 if (!require(remotes)) {
   if (params$`Install needed packages for {thesisdown}`) {
     install.packages("remotes", repos = "https://cran.rstudio.com")

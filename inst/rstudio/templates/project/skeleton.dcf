@@ -1,4 +1,4 @@
-Title: Thesis Project using thesisdown
-Binding: thesisdown_skeleton
+Title: Thesis Project using wagedown
+Binding: wagedown_skeleton
 OpenFiles: index.Rmd
-Icon: graduation_cap.png
+Icon: guinea_pig.png
