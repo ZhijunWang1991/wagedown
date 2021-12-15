@@ -1,4 +1,12 @@
-^.*\.Rproj$
+^amsterdown\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
+^\.travis\.yml$
+^R/_render\.r$
+^R/_usethis\.R$
 ^_pkgdown\.yml$
+^docs$
 ^pkgdown$
+^vignettes$
+^\.github$
