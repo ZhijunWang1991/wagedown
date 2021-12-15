@@ -1,0 +1,17 @@
+---
+title: 'Thesis Title'
+degreetype: 'Doctor of Philosophy'
+author: 'Your name'
+degrees: 
+output: bookdown::pdf_book
+site: bookdown::bookdown_site
+bibliography: [bib/thesis.bib]
+csl: csl/apa.csl # citation style file
+link-citations: yes # hyperlinks between citations and reference list
+knit: "bookdown::render_book"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
