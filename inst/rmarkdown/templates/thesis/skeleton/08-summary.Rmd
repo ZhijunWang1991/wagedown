@@ -1,0 +1,9 @@
+---
+chapter: 2
+knit: "bookdown::render_book"
+---
+
+# Summary {#ch:summary}
+
+This chapter contains a summary of the context in which your research is set. 
+

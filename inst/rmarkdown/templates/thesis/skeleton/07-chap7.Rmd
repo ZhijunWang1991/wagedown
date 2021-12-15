@@ -1,9 +1,9 @@
 ---
-chapter: 3
+chapter: 7
 knit: "bookdown::render_book"
 ---
 
-# Chapter3 {#ch:Chapter3}
+# Chapter 7 {#ch:chapter7}
 
 This chapter contains a summary of the context in which your research is set. 
 
@@ -14,5 +14,4 @@ Resist the temptation to discuss everything you've read in the last few years. A
 You will need to organize the literature review around themes, and within each theme provide a story explaining the development of ideas to date. In each theme, you should get to the point where your ideas will fit in. But leave your ideas to later chapters. This way it is clear what has been done beforehand, and what new contributions you are making to the research field.
 
 All citations should be done using markdown notation as shown below. This way, your bibliography will be compiled automatically and correctly.
-
 

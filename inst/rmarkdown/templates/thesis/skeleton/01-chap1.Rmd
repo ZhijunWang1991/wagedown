@@ -1,0 +1,15 @@
+---
+chapter: 1
+knit: "bookdown::render_book"
+---
+
+
+
+# General introduction {#ch:intro}
+
+
+
+This is where you introduce the main ideas of your thesis, and an overview of the context and background.
+
+In a PhD, Chapter 2 would normally contain a literature review. Typically, Chapters 3--5 would contain your own contributions. Think of each of these as potential papers to be submitted to journals. Finally, Chapter 6 provides some concluding remarks, discussion, ideas for future research, and so on. Appendixes can contain additional material that don't fit into any chapters, but that you want to put on record. For example, additional tables, output, etc.
+

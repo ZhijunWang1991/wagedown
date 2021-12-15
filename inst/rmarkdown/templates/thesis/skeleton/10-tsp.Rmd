@@ -1,0 +1,8 @@
+---
+knit: "bookdown::render_book"
+---
+
+# Overview of completed training activities {-}
+
+**Discipline specific activities**
+
