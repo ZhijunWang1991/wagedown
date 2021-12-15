@@ -1,12 +1,14 @@
 Package: wagedown
-Title: An updated R Markdown thesis template based on thesisdown and bookdown package
+Title: A R Markdown thesis template for Wageningen University
 Version: 1.0
 Authors@R: c(
-    person("Zhijun", "Wang", email = "zhijun0916@gmail.com", role = c("cre", "aut")))
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
+    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
+    person("Wang", "Zhijun", email = "zhijun0916@gmail.com", role = "aut"))
 Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
+    Wageningen Univeristy, this package aims to encourage reproducible research using
     simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
+    and analyses as well. Based on Chester Ismay's thesisdown
 Maintainer: Zhijun Wang <zhijun0916@gmail.com>
 Depends:
     R (>= 3.2.0)
@@ -19,9 +21,11 @@ Imports:
     R.utils
 Suggests:
     remotes,
-    usethis
-License: MIT + file LICENSE
+    usethis,
+    rmarkdown
+License: MIT
 Encoding: UTF-8
 LazyData: true
 SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
 RoxygenNote: 7.1.2
+VignetteBuilder: knitr

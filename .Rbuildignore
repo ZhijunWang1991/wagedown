@@ -1,10 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-R/.setup.R
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-^images$
-^LICENSE\.md$
-.github
-^README\.Rmd$
