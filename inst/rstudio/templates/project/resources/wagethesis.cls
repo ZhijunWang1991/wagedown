@@ -10,7 +10,7 @@
 %% at Monash University.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{monashthesis}[2016/09/06 Monash Thesis Class]
+\ProvidesClass{wagethesis}[2016/09/06 Monash Thesis Class]
 
 %% FONT
 \usepackage[T1]{fontenc}
@@ -200,7 +200,7 @@
         in the presence of the\\
         Thesis Committee appointed by the Academic Board\\
         to be defended in public\\
-        on Tuesday 14 June 2022\\
+        on Tuesday 4 July 2000\\
         at 11:30 a.m. in the Aula\end{center}
     %\hrulefill
     \newpage\mbox{}\thispagestyle{empty}\newpage}}
