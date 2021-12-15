@@ -6,9 +6,6 @@
 \usage{
 thesis_epub(...)
 }
-\arguments{
-\item{...}{Further arguments passed to or from other methods.}
-}
 \value{
 A ebook version of the thesis
 }
@@ -18,6 +15,6 @@ to specify the creation of a epub version of the thesis.
 }
 \examples{
 \dontrun{
-output:wagedown::thesis_epub
+ output: thesisdown::thesis_epub
 }
 }

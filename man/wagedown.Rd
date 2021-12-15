@@ -3,12 +3,8 @@
 \docType{package}
 \name{wagedown}
 \alias{wagedown}
-\alias{wagedown-package}
-\title{wagedown: A package for creating undergraduate, Masters, and PhD theses
+\title{wagedown: A package for creating PhD thesis
 using R Markdown}
-\description{
-Using the bookdown package and LaTeX and Word thesis templates from Reed College, this package aims to encourage reproducible research using simple Markdown syntax while embedding all of the R code to produce plots and analyses as well.
-}
 \section{thesis_gitbook}{
 
 Creates an R Markdown thesis template as a webpage
@@ -29,7 +25,3 @@ Creates an R Markdown thesis template as a Microsoft Word document
 Creates an R Markdown thesis template as an ebook
 }
 
-\author{
-\strong{Maintainer}: Zhijun Wang \email{zhijun0916@gmail.com}
-
-}
