@@ -153,7 +153,7 @@ If you have any suggestions and comments, you could use
 [issues](https://github.com/ZhijunWang1991/wagedown/issues) to let me
 know.
 
-##References
+## References
 
 -   `bookdown`, Authoring Books and Technical Documents with
     RMarkdown,Yihui Xie,<https://bookdown.org/yihui/bookdown>.
