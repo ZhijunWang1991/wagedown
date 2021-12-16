@@ -82,8 +82,8 @@ will look something like the image below.
 
 ![](man/figures/thesis_with_wagedown.png)
 
-Next, give your project a name and specify where you’d like the files to
-appear.
+Next, give your **project a name** and specify where you’d like the
+files to appear.
 
 ![](man/figures/thesis_proj_name.png)
 
@@ -155,12 +155,9 @@ know.
 
 ##References
 
--   @Book{, title = {bookdown: Authoring Books and Technical Documents
-    with {R} Markdown}, author = {Yihui Xie}, publisher = {Chapman and
-    Hall/CRC}, address = {Boca Raton, Florida}, year = {2016}, note =
-    {ISBN 978-1138700109}, url =
-    {<https://bookdown.org/yihui/bookdown>}, }
+-   `bookdown`, Authoring Books and Technical Documents with
+    RMarkdown,Yihui Xie,<https://bookdown.org/yihui/bookdown>.
 -   `thesisdown`, Chester Ismay, <https://github.com/ismayc/thesisdown>.
--   **monashthesisdown**: A package for creating undergrad and post-grad
+-   `monashthesisdown`,A package for creating undergrad and post-grad
     theses using RMarkdown, Mushfiqul Anwar Siraji,
     <https://github.com/masiraji/monashthesisdown>.
