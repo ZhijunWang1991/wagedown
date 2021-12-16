@@ -60,21 +60,21 @@ if (!require("remotes"))
 
 The most easy way to write your thesis with `wagedown` is to start with new project.
 
-In RStudio, click on **File** > **New Project** > **New Directory**. 
+In RStudio, click on **File** > **New Project** > **New Directory**.
 
-<img src="man/figures/thesis_proj.png" align="left"/>
+![](man/figures/thesis_proj.png)
 
 Then select **Thesis Project using wagedown** from the dropdown that
 will look something like the image below.
 
-<img src="man/figures/thesis_with_wagedown.png" align="left"/>
+![](man/figures/thesis_with_wagedown.png)
 
  
  Next, give your project a name and specify where you'd like the files to appear.
 
-<img src="man/figures/thesis_proj_name.png" align="left"/>
+![](man/figures/thesis_proj_name.png)
 
-When you finish your wrinting, Click “Build Book” from the Build pane to render the thesis to an output format of your choosing. The PDF file of your thesis will be deposited in the `_book/` directory, by default.
+When you finish your writing, Click “Build Book” from the Build pane to render the thesis to an output format of your choosing. The PDF file of your thesis will be deposited in the `_book/` directory, by default.
 
 ## Template introduction
 
