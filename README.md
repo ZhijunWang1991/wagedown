@@ -80,7 +80,7 @@ In RStudio, click on **File** \> **New Project** \> **New Directory**.
 Then select **Thesis Project using wagedown** from the dropdown that
 will look something like the image below.
 
-![](man/figures/thesis_with_wagedown.png)
+![](man/figures/thesis_with_wagedown.PNG)
 
 Next, give your **project a name** and specify where you’d like the
 files to appear.
