@@ -28,3 +28,4 @@ LazyData: true
 SystemRequirements: pandoc (>= 1.18) - https://pandoc.org
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr
+URL: https://zhijunwang1991.github.io/wagedown/
