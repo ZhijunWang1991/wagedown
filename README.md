@@ -22,7 +22,7 @@ Using `wagedown` has some prerequisites, such as Pandoc, LaTeX and some
 fonts. To compile PDF documents using R, you need to have Pandoc, LaTeX
 and several related packages installed. If you have a recent version of
 RStudio, then you already have Pandoc and don’t need to do anything more
-about that. First setrp is that you need to have
+about that. First step is that you need to have
 [R](https://www.r-project.org/) and
 [Rstudio](https://www.rstudio.com/products/rstudio/download/) installed
 in your computer. Becasue RStudio is probably the easiest tool for
@@ -30,10 +30,10 @@ writing both R code and text in your thesis. It also provides a nice way
 to build your thesis while editing
 
 Next is LaTeX. By far the easiest way to install LaTeX on any platform
-is with the tinytex package:
+is with the `tinytex` package:
 
 ``` r
-install.packages(c('tinytex', 'rmarkdown'))
+install.packages('tinytex')
 tinytex::install_tinytex()
 # after restarting RStudio, confirm that you have LaTeX with
 tinytex:::is_tinytex()
@@ -42,20 +42,20 @@ tinytex:::is_tinytex()
 tinytex will also install some fonts in your computer, therefore it
 takes some time.
 
-It is also necessary to install {bookdown} package, you can install it
-from CRAN as follows:
+It is also necessary to install `bookdown` and \`rmarkdown\`\` package,
+you can install it from CRAN as follows:
 
 ``` r
-install.packages("bookdown")
+install.packages(c('bookdown', 'rmarkdown'))
 ```
 
-### install wagedown
+### Install wagedown
 
 1.  Ensure that you have already installed packages described above, and
     are using the latest version of
     [RStudio](https://www.rstudio.com/products/rstudio/download/).
 
-2.  Install the {wagedown} packages. Note that {wagedown} is not
+2.  Install the `wagedown` packages. Note that `wagedown` is not
     available on CRAN at the moment and that’s why
     `install.packages("wagedown")` won’t work. Use
     `remotes::install_github()` as shown below instead to install the
@@ -64,7 +64,6 @@ install.packages("bookdown")
 ``` r
 if (!require("remotes")) 
     install.packages("remotes", repos = "https://cran.rstudio.org")
-    remotes::install_github("rstudio/bookdown")
     remotes::install_github("ZhijunWang1991/wagedown")
 ```
 
