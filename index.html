@@ -67,7 +67,8 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
+  <main id="main" class="col-md-9">
+<div class="section level1">
 <div class="page-header"><h1 id="wagedown-">Wagedown <img src="reference/figures/wagedown_hex.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#wagedown-"></a>
 </h1></div>
 <p><code>Wagedown</code> is an Rmarkdown template for PhD thesis in Wageningen University, the Netherlands. It’s based on <a href="http://thesisdown.rbind.io/" class="external-link">thesisdown</a>, and <a href="https://bookdown.org/yihui/bookdown/" class="external-link">bookdown package</a>.</p>
@@ -79,29 +80,28 @@
 <div class="section level3">
 <h3 id="initial-setup">Initial setup<a class="anchor" aria-label="anchor" href="#initial-setup"></a>
 </h3>
-<p>Using <code>wagedown</code> has some prerequisites, such as Pandoc, LaTeX and some fonts. To compile PDF documents using R, you need to have Pandoc, LaTeX and several related packages installed. If you have a recent version of RStudio, then you already have Pandoc and don’t need to do anything more about that. First setrp is that you need to have <a href="https://www.r-project.org/" class="external-link">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">Rstudio</a> installed in your computer. Becasue RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing</p>
-<p>Next is LaTeX. By far the easiest way to install LaTeX on any platform is with the tinytex package:</p>
+<p>Using <code>wagedown</code> has some prerequisites, such as Pandoc, LaTeX and some fonts. To compile PDF documents using R, you need to have Pandoc, LaTeX and several related packages installed. If you have a recent version of RStudio, then you already have Pandoc and don’t need to do anything more about that. First step is that you need to have <a href="https://www.r-project.org/" class="external-link">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">Rstudio</a> installed in your computer. Becasue RStudio is probably the easiest tool for writing both R code and text in your thesis. It also provides a nice way to build your thesis while editing</p>
+<p>Next is LaTeX. By far the easiest way to install LaTeX on any platform is with the <code>tinytex</code> package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'tinytex'</span>, <span class="st">'rmarkdown'</span><span class="op">)</span><span class="op">)</span>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'tinytex'</span><span class="op">)</span>
 <span class="fu">tinytex</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/install_tinytex.html" class="external-link">install_tinytex</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co"># after restarting RStudio, confirm that you have LaTeX with</span>
 <span class="fu">tinytex</span><span class="fu">:::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/is_tinytex.html" class="external-link">is_tinytex</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p>tinytex will also install some fonts in your computer, therefore it takes some time.</p>
-<p>It is also necessary to install {bookdown} package, you can install it from CRAN as follows:</p>
+<p>It is also necessary to install <code>bookdown</code> and `rmarkdown`` package, you can install it from CRAN as follows:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"bookdown"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'bookdown'</span>, <span class="st">'rmarkdown'</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="install-wagedown">install wagedown<a class="anchor" aria-label="anchor" href="#install-wagedown"></a>
+<h3 id="install-wagedown">Install wagedown<a class="anchor" aria-label="anchor" href="#install-wagedown"></a>
 </h3>
 <ol style="list-style-type: decimal">
 <li><p>Ensure that you have already installed packages described above, and are using the latest version of <a href="https://www.rstudio.com/products/rstudio/download/" class="external-link">RStudio</a>.</p></li>
-<li><p>Install the {wagedown} packages. Note that {wagedown} is not available on CRAN at the moment and that’s why <code>install.packages("wagedown")</code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github()</a></code> as shown below instead to install the package.</p></li>
+<li><p>Install the <code>wagedown</code> packages. Note that <code>wagedown</code> is not available on CRAN at the moment and that’s why <code>install.packages("wagedown")</code> won’t work. Use <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github()</a></code> as shown below instead to install the package.</p></li>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> 
     <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span>, repos <span class="op">=</span> <span class="st">"https://cran.rstudio.org"</span><span class="op">)</span>
-    <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rstudio/bookdown"</span><span class="op">)</span>
     <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ZhijunWang1991/wagedown"</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level3">
@@ -180,6 +180,7 @@
 </ul>
 </div>
 </div>
+
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
@@ -203,7 +204,12 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ZhijunWang1991/wagedown/actions" class="external-link"><img src="https://github.com/ZhijunWang1991/wagedown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
