@@ -1,5 +1,8 @@
 
 <!-- README.md is generated from README.Rmd via `devtools::build_readme()`. Please edit README.Rmd -->
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ZhijunWang1991/wagedown/workflows/R-CMD-check/badge.svg)](https://github.com/ZhijunWang1991/wagedown/actions)
+<!-- badges: end -->
 
 # Wagedown <img src="man/figures/wagedown_hex.png" align="right" width=200 />
 
